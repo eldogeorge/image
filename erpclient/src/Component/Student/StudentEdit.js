@@ -155,7 +155,7 @@ function StudentEdit() {
     }
     else {
       // BRS6 add data in formdata
-      data.append('student_profile', Image || existingImg)
+      // data.append('student_profile', Image || existingImg)
       Image?data.append('student_profile', Image):data.append('student_profile', existingImg)
       data.append('rollNo', rollNo)
       data.append('fname', fname)
@@ -171,8 +171,7 @@ function StudentEdit() {
       // BRS7 api call
       const response = await editStudent(params,headerConfig, data)
       console.log(response.data);
-      if (response.status == 202) {
-
+      if (response.status == 204) {
          alert('Updated Success')
       //   //RSAS5 navigate to admin home
         navigate('/StudentStudentProfile')

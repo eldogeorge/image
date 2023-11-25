@@ -1,5 +1,5 @@
 
 // AAS1 and after exports
-const baseURL='https://erp-college-server.onrender.com'
+const baseURL='http://localhost:8000'
 
 module.exports=baseURL

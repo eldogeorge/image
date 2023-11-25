@@ -147,7 +147,7 @@ function StudentRegister() {
       // BRS7 api call
       const response = await studentRegisterAPI(headerConfig, data)
       console.log(response);
-      if (response.status == 206) {
+      if (response.status == 203) {
 
         //CRS7 updata context then goto admin home.js
         setregisterData(response.data)
@@ -170,7 +170,7 @@ function StudentRegister() {
 
         //  alert('student added')
         //RSAS5 navigate to admin home
-        navigate('/StudentStudentHome')
+        navigate('/')
 
       }
       else {
@@ -492,7 +492,7 @@ function StudentRegister() {
                 <p class="text-sm font-semibold">
                   Have an account?
                   <a
-                    href="/StudentStudentLogin "
+                    href="/"
                     class="text-danger transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                   > Login
                   </a>
